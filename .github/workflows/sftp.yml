@@ -16,7 +16,7 @@ jobs:
       uses: ja2142/FTP-Deploy-Action@sftp_ssh_keys
       env: 
         FTP_SERVER: 87.207.175.100
-        FTP_USERNAME: in2security-sftp
+        FTP_USERNAME: sftp
         FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
         METHOD: sftp
         PORT: 33322
