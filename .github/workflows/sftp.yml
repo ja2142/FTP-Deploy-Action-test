@@ -1,0 +1,25 @@
+name: CI
+
+on:
+  push:
+    branches: 
+      - master
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: sftp deploy
+      uses: ja2142/FTP-Deploy-Action@sftp_ssh_keys
+      env: 
+        FTP_SERVER: 87.207.175.100
+        FTP_USERNAME: in2security-sftp
+        FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
+        METHOD: sftp
+        PORT: 33322
+        LOCAL_DIR: ${{ github.workspace }}
+        REMOTE_DIR: /sftp
+        ARGS: --delete
