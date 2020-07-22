@@ -18,4 +18,5 @@ jobs:
         ftp-server: sftp://87.207.141.60:33322/sftp/
         ftp-username: sftp
         ftp-password: ${{ secrets.FTP_PASSWORD }}
-        git-ftp-args: --insecure
+        known-hosts: '[87.207.175.100]:33322 ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBIBLXLsh/dQgGUABwEO31mSpG+PKEXl+czjZ8UD5btVsIYWHYouLfWTlDWT43Aai9aCkQ9F3CEw4sykAnPmBirw='
+
