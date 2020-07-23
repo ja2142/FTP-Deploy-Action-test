@@ -18,6 +18,7 @@ jobs:
         ftp-server: sftp://87.207.141.60:33322/sftp/
         ftp-username: sftp
         ftp-password: ${{ secrets.FTP_PASSWORD }}
+        sftp-key: ${{ secrets.SSH_KEY }}
         known-hosts: |
           '[87.207.141.60]:33322 ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBL/PoWVCWd8PyJ7qHDyYdM/jdrdAxZfWKpxPdnH3xYYA1b0dQdv96e5keG4PYR8HRcM5510HaH91Z3v3xRUNjig=
           [87.207.141.60]:33322 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDmylJWXq3GnHEkdAlDeeRH6VVlfDpyXdTSMXptsjS/JEDQSnsKGH6PTagqieI+oCu60zWMk3sPA1b7hCPElLqksut0kNjTQhy7pMi/jLL4t1mifMl5lLvWXT+ZDjSHJZQca62VPCW1ddzfTDnvtmKfWr/yNwW6NKORkTAzaFYjfDyzG1KwqvyFhlOStybfk4d2AWZ4AQMvF62aj2DnTjLeAvdnRsErqjPhndnpYJlCArWCCqOr6sAErxK2oxLH1XHYDzUsduSEw54zL9ZFZIt/8440WidMalSly0rGkMvbD+DJs/9kxDWp2UHzlwSoFHR9jMy5RUVsd7UjdLPThOK2SaU8uMPAzImViXKiWxpo3TB2pVgGEKtCLTRrfxPSvovu6pJzeEja9rYh7etP4zuSjdas+ih4LWB5FwMXfVVDnjPqYq8ks4/mDyxFn2SA1rBsrc9WykgCM9+SD4ktuxdBgbsakh+28BSOjv4aJz4lNxItLtkj1sRdDjKCcyLxzcs=
